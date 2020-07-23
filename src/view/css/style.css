@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "JustAnotherHand";
+  src: url(../font/Just_Another_Hand/JustAnotherHand.ttf);
+}
+.main {
+  height: 40em;
+  width: 100vw;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .title {
+  height: 3em;
+  width: 10em;
+  text-align: center;
+  font-family: "JustAnotherHand";
+  font-size: 2em;
+}
+.main .title h1 {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main .container__form {
+  height: 20em;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  background: rgba(138, 234, 146, 0.8);
+  border: 0.2em solid black;
+  border-radius: 1em;
+}
+.main .container__form .form {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .container__form .form label {
+  font-family: "JustAnotherHand";
+  font-size: 1.5em;
+  margin-top: 0.6em;
+  border: none;
+}
+.main .container__form .form input {
+  font-family: "JustAnotherHand";
+  font-size: 1.5em;
+  margin-top: 0.6em;
+  border-radius: 0.2em;
+  border: none;
+}
+.main .container__form .form .button {
+  color: white;
+  font-size: 2em;
+  background: #5F5566;
+}
+.main .container__form .form .form--validator {
+  margin-top: 0.3em;
+  padding-left: 0.5em;
+  border-radius: 0.5em;
+  border: solid 0.1em red;
+  background: rgba(255, 0, 0, 0.4);
+  font-family: "JustAnotherHand";
+  font-size: 1.3em;
+}
+
+/*# sourceMappingURL=style.css.map */

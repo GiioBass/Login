@@ -1,0 +1,74 @@
+@font-face
+	font-family: 'JustAnotherHand'
+	src: url(../font/Just_Another_Hand/JustAnotherHand.ttf)
+
+$font: 'JustAnotherHand'
+
+.main
+	height: 40em
+	width: 100vw
+	padding-top: 2em
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+
+	.title
+		height: 3em
+		width: 10em
+		text-align: center
+		font-family: $font
+		font-size: 2em
+
+		h1
+			height: 100%
+			width: 100%
+			margin: 0
+			padding: 0
+
+
+	.container__form
+		height: 20em
+		width: 40%
+		display: flex
+		justify-content: center
+		background: rgba(#8AEA92, 0.8)
+		border: 0.2em solid black
+		border-radius: 1em
+
+		.form
+			height: 100%
+			width: 70%
+			display: flex
+			flex-direction: column
+			justify-content: center
+
+			label
+				font-family: $font
+				font-size: 1.5em
+				margin-top: 0.6em
+				border: none
+
+
+			input
+				font-family: $font
+				font-size: 1.5em
+				margin-top: 0.6em
+				border-radius: 0.2em
+				border: none
+
+			.button
+				color: white
+				font-size: 2em
+				background: #5F5566
+
+			.form--validator
+				margin-top: 0.3em
+				padding-left: 0.5em
+				border-radius: 0.5em
+				border: solid 0.1em red
+				background: rgba(red, 0.4)
+				font-family: $font
+				font-size: 1.3em
+
