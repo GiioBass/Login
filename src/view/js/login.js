@@ -14,13 +14,26 @@ function data(formData) {
         validationUsername(username);
         validationPassword(password);
 
-        const response = await fetch("../../controller/modules/login.php",{
+        fetch("../src/controller/modules/login.php", {
 
-            method: 'POST',
-            body: data
-        })
-        .then(res => res.json())
-        .then(res => console.log(res))
+                method: 'POST',
+                body: data
+            })
+            .then(res => res.json())
+            .then(res => {
+
+                console.log(res);
+                if (!res.status) {
+
+                    alert('El usuario no existe');
+                }else {
+                    
+                    window.location = res.url;
+                }
+
+            });
+
+          
 
     })
 }
